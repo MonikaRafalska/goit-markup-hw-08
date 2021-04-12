@@ -1,6 +1,6 @@
 :root{
-    --main-font: font-family: 'Roboto', sans-serif;
-    --secondary-font: font-family: 'Raleway', sans-serif;
+    --main-font: 'Roboto', sans-serif;
+    --secondary-font: 'Raleway', sans-serif;
     --main-color: #2196F3;
     --secondary-color: #212121;
     --description-color: #757575;
@@ -18,10 +18,6 @@ body {
 }
 
 /*==== COMPONENTS ====*/
-@font-face{
-    font-family: 'Roboto';
-    src: url(https://fonts.gstatic.com);
-}
 .logo-web,
 .logo-studio,
 .logo-studio-white{
