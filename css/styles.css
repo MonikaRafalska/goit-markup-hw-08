@@ -16,6 +16,37 @@ body {
     color: var(--secondary-color);
     background-color: var(--main-background-color);
 }
+h1,
+h2,
+h3,
+h4,
+h6,
+ul,
+p {
+    margin: 0;
+    padding: 0;
+}
+
+img{
+    display: block;
+}
+
+.list{
+    list-style: none;
+}
+.link{
+    text-decoration: none;
+}
+
+.container{
+    width: 1200px;
+    padding: 15px;
+    margin: 0 auto;
+}
+.section{
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
 
 /*==== COMPONENTS ====*/
 .logo-web,
@@ -46,13 +77,7 @@ body {
     background-color: var(--third-background-color);
 }
 
-.hero-modal-btn{
-    font-weight: 700;
-    line-height: 1.875;
-    display: flex;
-    align-items: center;
-    letter-spacing: 0.06em;
-    }
+
 
 .secondary-header{
     font-weight: 700;
@@ -84,10 +109,42 @@ body {
 .section-hero,
 .section-footer{
     background-color: var(--secondary-background-color);
+    padding-top: 0px;
+    padding-bottom: 0px;
 }
 /*==== END COMPONENTS ====*/
 
 /*==== HEADER ====*/
+.header .container{
+    display: flex;
+    align-items: center;
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+
+.navigation-list, 
+.contact-list{
+    display: flex;
+    align-items: center;
+}
+
+.logo{
+    margin-right: 93px;
+    margin-left: 215px;
+    padding-top: 24px;
+    padding-bottom: 25px;
+}
+   
+.navigation-list-item:not(:last-child){
+    margin-right: 46px;
+}
+.header .contact-list{
+    margin-left: auto;
+}
+.contact-list-item{
+    margin-right: 50px;
+}
+
 .navigation-list-link,
 .contact-list-link,
 .footer-link{
@@ -105,6 +162,9 @@ body {
 /*==== END HEADER ====*/
 
 /*==== HERO ====*/
+.section-hero .container{
+    padding: 200px 452px 280px 452px;   
+}
 
 .main-header{
     font-weight: 900;
@@ -114,11 +174,35 @@ body {
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: var(--third-text-color);
+    margin: 0 auto;
+   
+    width: 696px;
+    height: 120px;
+    margin-bottom: 30px;
+}   
+.hero-modal-btn{
+    font-weight: 700;
+    line-height: 1.875;
+    display: inline-block;
+    align-items: center;
+    letter-spacing: 0.06em;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    padding: 10px 41px 10px 42px;
+    min-width: 200px;
+    margin: 0 auto;
 }
-
+   
 /*==== END HERO ====*/
 
 /*==== ADVANTAGES ====*/
+.advantages-list{
+ display: flex;
+ align-items: center;
+}
+
+
+
 .advantages-list-header,
 .advantages-list-text{
     font-weight: 700;
