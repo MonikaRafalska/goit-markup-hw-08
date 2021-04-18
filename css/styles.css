@@ -49,6 +49,7 @@ img{
 }
 
 /*==== COMPONENTS ====*/
+
 .logo-web,
 .logo-studio,
 .logo-studio-white{
@@ -75,8 +76,10 @@ img{
     text-align: center;
     letter-spacing: 0.03em;
     background-color: var(--third-background-color);
+    border-radius: 4px;
+    border: 0px;
+    padding: 6px 22px;
 }
-
 
 .secondary-header{
     font-weight: 700;
@@ -119,6 +122,7 @@ img{
     align-items: center;
     padding-top: 32px;
     padding-bottom: 32px;
+    border-bottom: 1px solid #ECECEC;
 }
 
 .navigation-list, 
@@ -150,7 +154,6 @@ img{
     font-size: 14px;
     line-height: 1.142;
     letter-spacing: 0.02em;
-    text-decoration: none;
     color: var(--secondary-color);
 }
 
@@ -251,7 +254,7 @@ img{
   margin-right: 30px;  
 }
 .team-list-item{
-    background: #FFFFFF;
+    background: var(--main-background-color);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
     }
@@ -287,8 +290,7 @@ img{
 }
 
 .addres,
-.footer-contact,
-.footer-contact-portfolio-email{
+.footer-contact{
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
@@ -302,7 +304,6 @@ img{
     
 .footer-contact,
 .footer-contact-portfolio-email{
-    text-decoration: none;
     color: var(--footer-contact-color);
 }
 .footer-list-item{
@@ -312,28 +313,70 @@ img{
     padding-bottom: 9px;
 }
 
-}
-.footer-contact-portfolio-email{
-    text-decoration-line: underline;
-}
 /*==== END FOOTER ====*/
 
 /*========================== PORTFOLIO.HTML ========================*/
 
 /*==== FILTERS ====*/
+.section-filters{
+    padding-bottom: 16px;
+}
+.filters-list{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.filters-list-item:not(:last-child){
+    margin-right: 8px;
+}
 /*==== END FILTERS ====*/
 
 /*==== PROJECTS ====*/
+.section-project{
+    padding-top: 34px;
+    margin: 0 auto;
+}
+.projects-list{
+    display: flex;
+    flex-wrap: wrap;
+}
+.projects-list-item-img{
+    display: block;
+    padding-bottom: 20px;
+}
+.projects-list-item{
+    width: 370px;
+    background: var(--main-background-color);
+    border: 1px solid #EEEEEE;
+    box-sizing: border-box;
+}
+.projects-list-item:not(:nth-child(3n)){
+    margin-right: 30px;
+}
+
+.projects-list-item:not(:nth-child(-n + 3)){
+    margin-top: 30px;
+}
+
 .projects-list-text{
     font-weight: 700;
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
+    padding-bottom: 4px;
+    
 }
 .projects-list-text-description{
     font-size: 16px;
     line-height: 1.875;
     letter-spacing: 0.03em;
     color: var(--description-color);
+    padding-bottom: 20px;
+}
+.projects-list-text,
+.projects-list-text-description{
+    margin-right: 24px;
+    margin-left: 24px;
+    width: 322px;
 }
 /*==== END PROJECTS ====*/
