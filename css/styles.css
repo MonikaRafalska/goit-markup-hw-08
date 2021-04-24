@@ -166,6 +166,15 @@ img{
 .section-hero .container{
     padding: 200 0;  
 }
+.section-hero{
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), 
+    rgba(47, 48, 58, 0.4)), 
+    url(/images/herobackground.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 1600px;
+    margin: 0 auto;
+}
 
 .main-header{
     font-weight: 900;
@@ -205,6 +214,28 @@ img{
     margin-right: 30px;
 }
 
+.advantages-icon{
+    display: flex;
+    margin: 0 auto;
+    
+}
+
+.advantages-list-icon:not(:last-child){
+    margin-right: 30px;
+}
+
+.advantages-list-icon{
+    display: flex;
+    background-color: #F5F4FA;
+    border-radius: 4px;
+    margin-bottom: 30px;
+    min-width: 270px;
+    min-height: 120px;
+    padding-top: 25px;
+    
+    
+
+}
 
 .advantages-list-header,
 .advantages-list-text{
@@ -279,7 +310,43 @@ img{
 .team-list-text-description{
     font-weight: 400;
     color: var(--description-color);
+}
+
+.team-social-list{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 16px;
     margin-bottom: 30px;
+    
+}
+
+.team-icon{
+    width: 20px;
+    height: 20px;
+}
+
+.team-social-list-item{
+    display: flex;
+    background-color: var(--main-background-color);
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    min-width: 44px;
+    min-height: 44px;
+    fill: #AFB1B8;
+}
+
+.team-social-list-item:not(:last-child){
+    margin-right: 10px;
+}
+
+.team-social-list-item:hover,
+.team-social-list-item:focus{
+    fill: var(--third-text-color);
+    background-color: var(--main-color);
+
+
 }
 /*==== END OUR TEAM ====*/
 
@@ -311,6 +378,53 @@ img{
 }
 .footer-contact:not(:last-child){
     padding-bottom: 9px;
+}
+.footer-social{
+    display: flex;
+    width: 206px;
+    height: 80px;
+    margin-left: 70px;
+}
+
+.footer-social-text{
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.143;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--third-text-color);
+    min-width: 113px;
+    min-height: 16px;
+    margin-bottom: 20px;
+
+}
+.footer-social-list,
+.footer-social-list-item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.footer-social-list-link:not(:last-child){
+    margin-right: 10px;
+}
+.footer-icon{
+    width: 20px;
+    height: 20px;
+}
+
+.footer-social-list-link{    
+    display: flex;
+    min-width: 44px;
+    min-height: 44px;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    fill: var(--main-background-color);
+}
+.footer-social-list-link:hover,
+.footer-social-list-link:focus{
+    background-color: var(--main-color);
 }
 
 /*==== END FOOTER ====*/
