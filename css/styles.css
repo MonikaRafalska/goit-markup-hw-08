@@ -433,6 +433,7 @@ img{
     height: 80px;
     margin-left: 70px;
     padding-top: 12px;
+    box-sizing: content-box;
 }
 
 .footer-social-text{
