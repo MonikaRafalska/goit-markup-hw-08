@@ -400,7 +400,7 @@ img{
     padding-top: 60px;
     padding-bottom: 60px;
 }
-.section-footer .container{
+.footer-left-side .container{
     display: flex;
 }
 
@@ -433,7 +433,6 @@ img{
     height: 80px;
     margin-left: 70px;
     padding-top: 12px;
-    box-sizing: content-box;
 }
 
 .footer-social-text{
