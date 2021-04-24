@@ -129,6 +129,7 @@ img{
 .contact-list{
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 
 .logo{
@@ -159,6 +160,16 @@ img{
 
 .contact-list-link{
     color: var(--description-color);
+}
+.contact-list-icon{
+    fill: #757575;
+    margin-right: 10px;
+     /*???!!!!!!!!!!!!!!!!!!!!!!!!!!! telefon ucieka do góry! nie wczytują się dobrze width i hight*/
+}
+.contact-list-icon:hover,
+.contact-list-icon:focus{
+    fill: var(--main-color);
+    background-color: var(--third-background-color);
 }
 /*==== END HEADER ====*/
 
@@ -389,6 +400,9 @@ img{
     padding-top: 60px;
     padding-bottom: 60px;
 }
+.section-footer .container{
+    display: flex;
+}
 
 .addres,
 .footer-contact{
@@ -413,12 +427,13 @@ img{
 .footer-contact:not(:last-child){
     padding-bottom: 9px;
 }
+
 .footer-social{
-    display: flex;
     width: 206px;
     height: 80px;
     margin-left: 70px;
-} /* DLACZEGO NIE DZIAŁA!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+    padding-top: 12px;
+}
 
 .footer-social-text{
     font-weight: 700;
@@ -477,6 +492,10 @@ img{
 .filters-list-item:not(:last-child){
     margin-right: 8px;
 }
+.filters-list-item:hover,
+.filters-list-item:focus{
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+}
 /*==== END FILTERS ====*/
 
 /*==== PROJECTS ====*/
@@ -526,5 +545,8 @@ img{
     margin-right: 24px;
     margin-left: 24px;
     width: 322px;
+}
+.projects-list-item:hover{
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 /*==== END PROJECTS ====*/
