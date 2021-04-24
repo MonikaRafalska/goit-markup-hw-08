@@ -400,6 +400,9 @@ img{
     padding-top: 60px;
     padding-bottom: 60px;
 }
+.section-footer .container{
+    display: flex;
+}
 .footer-left-side .container{
     display: flex;
 }
