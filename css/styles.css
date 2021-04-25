@@ -165,7 +165,7 @@ img{
     fill: #757575;
     margin-right: 10px;
 }
-/*???!!!!!!!!!!!!!!!!!!!!!!!!!!! telefon ucieka do góry! nie wczytują się dobrze width i hight*/
+
 .contact-list-icon:hover,
 .contact-list-icon:focus{
     fill: var(--main-color);
