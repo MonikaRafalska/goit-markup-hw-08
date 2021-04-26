@@ -95,12 +95,15 @@ img{
 .navigation-list-link:focus,
 .contact-list-link:hover,
 .contact-list-link:focus,
+.contact-list-link:active,
 .footer-contact:hover,
 .footer-contact:focus,
 .footer-contact-portfolio-email:hover,
 .footer-contact-portfolio-email:focus{
     color:var(--main-color)
 }
+
+
 .hero-modal-btn:hover,
 .hero-modal-btn:focus,
 .filters-modal-btn:hover,
@@ -166,17 +169,22 @@ img{
     margin-right: 10px;
 }
 
+.contact-list-link:hover .contact-list-icon,
+.contact-list-link:focus .contact-list-icon,
+.contact-list-link:active .contact-list-icon{
+    fill: var(--main-color)
+}
+
 .contact-list-icon:hover,
-.contact-list-icon:focus{
+.contact-list-icon:focus,
+.contact-list-icon:active{
     fill: var(--main-color);
     background-color: var(--third-background-color);
 }
+
 /*==== END HEADER ====*/
 
 /*==== HERO ====*/
-.section-hero .container{
-    padding: 200 0;  
-}
 .section-hero{
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
     url(../images/herobackground.png);
@@ -184,6 +192,12 @@ img{
     background-size: cover;
     max-width: 1600px;
     margin: 0 auto;
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+.section-hero .container{
+    padding-top: 200px;
+    padding-bottom: 200px;
 }
 
 .main-header{
