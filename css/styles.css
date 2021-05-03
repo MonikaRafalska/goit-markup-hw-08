@@ -477,8 +477,6 @@ img{
     line-height: 1.714;
     letter-spacing: 0.03em;
     color: var(--third-text-color);
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .addres{
     margin-top: 20px;
@@ -487,6 +485,8 @@ img{
 .footer-contact,
 .footer-contact-portfolio-email{
     color: var(--footer-contact-color);
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer-list-item{
     padding-top: 9px;
