@@ -55,7 +55,7 @@
         <section class="section-hero section">
             <div class="container">
             <h1 class="main-header">EFEKTYWNE ROZWIĄZANIA DLA WASZEGO BIZNESU</h1>
-            <button class="hero-modal-btn" type="button">Zamów usługe</button>
+            <button class="hero-modal-btn" type="button" data-modal-open>Zamów usługe</button>
             </div>
         </section>
         <!--ADVANTAGES-->
@@ -110,9 +110,13 @@
             <div class="container">
             <h2 class="secondary-header">Czym się zajmujemy</h2>
             <ul class="about-list list">
-                <li class="about-list-item"><img src="images/item1.jpg" alt="Dłonie piszące na klawiaturze" width="370" height="294"></li>
-                <li class="about-list-item"><img src="images/item2.jpg" alt="Parowanie laptopa i telefonu" width="370" height="294"></li>
+                <li class="about-list-item"><img src="images/item1.jpg" alt="Dłonie piszące na klawiaturze" width="370" height="294">
+                    <p class="about-list-item-text">Aplikacje komputerowe</p>
+            </li>
+                <li class="about-list-item"><img src="images/item2.jpg" alt="Parowanie laptopa i telefonu" width="370" height="294">
+                    <p class="about-list-item-text">Aplikacje mobilne</p></li>
                 <li class="about-list-item"><img src="images/item3.jpg" alt="Paleta kolorów wyświetlona na tablecie" width="370" height="294">
+                    <p class="about-list-item-text">Rozwiązania graficzne</p>
                 </li>
             </ul>
             </div>
@@ -327,8 +331,18 @@
             </ul>
         </div>
         </div>
-    
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+            <button type="button" class="close-btn" data-modal-close>
+                <svg class="modal-close-icon" width="11" height="11">
+                    <use href="./images/button-close.svg#icon-Vector"></use>
+                </svg>
+            </button>
+
+        </div>
+    </div>
+<script src="./js/modal.js"></script>
 </body>
 
 </html>
