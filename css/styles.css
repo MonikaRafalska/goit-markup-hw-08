@@ -199,7 +199,7 @@ img{
 .contact-list-icon:focus,
 .contact-list-icon:active{
     fill: var(--main-color);
-    background-color: var(--third-background-color);
+    /*background-color: var(--third-background-color);*/
 }
 
 /*==== END HEADER ====*/
