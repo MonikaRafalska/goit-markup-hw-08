@@ -329,8 +329,22 @@
                 </li>
             </ul>
         </div>
+        <div class="footer-newsletter">
+            <p class="footer-newsletter-info">Zapisz się do newslettera</p>
+            <form name="email">
+                <label>
+                    <input class="form-email-nw" type="email" name="newsletter-email" placeholder="E-mail"/>
+                </label>
+                <button class="newsletter-btn" type="submit">Zapisz się
+                    <svg class="newsletter-icon" width="24" height="24">
+                        <use href=""></use>
+                    </svg>
+                </button>
+            </form>
+        </div>
         </div>
     </footer>
+    <!--OKNO MODALNE-->
     <div class="backdrop is-hidden" data-modal>
         <div class="modal">
             <button type="button" class="close-btn" data-modal-close>
@@ -338,10 +352,35 @@
                     <use href="./images/button-close.svg#icon-Vector"></use>
                 </svg>
             </button>
+            <div class="modal-form">
+                <p class="modal-form-tittle">Zostaw swoje dane w formularzu poniżej</p>
+                <form>
+                    <p class="modal-label-username">Imie</p>
+                    <label class="modal-label">
+                        <input class="modal-label-input" type="text" name="username"/>
+                    </label>
+                    <label class="modal-label">
+                        <p class="modal-label-tel">Telefon</p>
+                        <input class="modal-label-input" type="tel" name="userphone_number"/>
+                    </label>
+                    <label class="modal-label">
+                        <p class="modal-label-email">Email</p>
+                        <input class="modal-label-input" type="email" name="useremail"/>
+                    </label>
+                    <label class="modal-label">
+                        <p class="modal-label-coment">Komentarz</p>
+                        <textarea class="modal-label-textarea" name="usercomment" rows="5" placeholder="Wprowadź tekst"></textarea>
+                    </label>
+                    <p>
+                        <svg>
+                            <use></use>
+                        </svg>Oświadczam iż akceptuję <span>Regulamin</span>i <span>Politykę Prywatności.</span></p>
+                    <button type="submit"></button>
+                </form>
 
+            </div>
         </div>
     </div>
 <script src="./js/modal.js"></script>
 </body>
-
 </html>
