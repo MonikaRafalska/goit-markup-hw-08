@@ -263,7 +263,6 @@ img{
 .advantages-icon{
     display: flex;
     margin: 0 auto;
-    
 }
 
 .advantages-list-icon:not(:last-child){
@@ -384,7 +383,6 @@ img{
     justify-content: center;
     margin-right: 16px;
     margin-bottom: 30px;
-    
 }
 
 .team-icon{
@@ -752,8 +750,6 @@ img{
     box-sizing: border-box;
     border-radius: 50%;
     background-color: var(--main-background-color);
-
-
 }
 
 .is-hidden{
@@ -925,8 +921,4 @@ img{
     border-color: #2196F3;
     outline: none;
 }
-
-/* jeszcze animacje! do button i wszytkich hover focus
-A potem hover, focus, svg i przejścia!
-nie zapomnij o hsvg w stopce */
 /*==== END MODAL ====*/
