@@ -559,7 +559,7 @@ img{
     color: var(--third-text-color);
     margin-bottom: 20px;
 }
-.form-email-nw{
+.footer-form-input{
     width: 358px;
     height: 50px;
     border: 1px solid rgba(255, 255, 255, 0.3);
@@ -568,16 +568,16 @@ img{
     border-radius: 4px;
     background-color: transparent;
     margin-right: 12px;
+    /* position: relative;     */
 }
 .newsletter-btn{
-    /* width: 200px;
-    height: 50px; --coś chyba za długi ten button i nie mieści się przy formularu, dlaczego?
-    i chyba przy ustawianiu marginesów zepsuł się adres napraw to!*/
+    width: 200px;
+    height: 50px;
     min-width: 82px;
     min-height: 30px;
     font-size: 16px;
     line-height: 1.875;
-    padding: 10px 76px 10px 42px;
+    padding-left: 42px;
     align-items: center;
     text-align: center;
     letter-spacing: 0.06em;
@@ -585,9 +585,21 @@ img{
     background: #2196F3;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
-    border-color: #2196F3;
+    display: flex;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border: none;
+    /* position: absolute;
+    top: 2914px;
+    left: 1335px;*/
 }
-.newsletter-icon{}
+.newsletter-icon{
+    width: 24px;
+    min-height: 24px;
+    margin-left: 24px;
+    padding-top: 13px;
+    padding-bottom: 13px;
+}
 /*==== END FOOTER ====*/
 
 /*========================== PORTFOLIO.HTML ========================*/
@@ -760,33 +772,26 @@ img{
     margin-bottom: 12px;
 }
 
-.modal-label-username,
-.modal-label-tel,
-.modal-label-email,
-.modal-label-coment{
+.accept-link{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    text-decoration-line: underline;
+    color: #2196F3;
+}
+.modal-label{
     height: 14px;
     font-size: 12px;
     line-height: 14px;
     letter-spacing: 0.01em;
     color: #757575;
+    margin-top: 10px;
     margin-bottom: 4px;
     margin-left: 40px;
-}
-.modal-label-username{
-    width: 24px;
-    margin-top: 10px;
-}
-.modal-label-tel{
-    width: 58px;
-    margin-top: 10px;
-}
-.modal-label-email{
-    width: 41px;
-    margin-top: 10px;
-}
-.modal-label-coment{
-    width: 60px;
-    margin-top: 10px;
+    display: flex;
 }
 .modal-label-input{
     width: 448px;
@@ -795,21 +800,115 @@ img{
     box-sizing: border-box;
     border-radius: 4px;
     margin-left: 40px;
-}
+    padding-left: 30px;
+} 
 .modal-label-textarea{
+    position: relative;
     width: 448px;
     height: 120px;
     border: 1px solid rgba(33, 33, 33, 0.2);
     box-sizing: border-box;
     border-radius: 4px;
     margin-left: 40px;
+    margin-bottom: 20px;
     font-size: 12px;
     line-height: 14px;
     letter-spacing: 0.01em;
     color: rgba(117, 117, 117, 0.5);
     padding: 12px 16px;
 }
-/* jeszcze style do regulaminu i button!
+.accept-label{
+    font-style: 400;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    color: #757575;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.modal-form-btn{
+    width: 200px;
+    height: 50px;
+    min-width: 48px;
+    min-height: 30px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 30px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+    background-color: var(--third-background-color);
+    border-radius: 4px;
+    border: 0px;
+    padding: 6px 22px;
+    padding: 10px 76px;
+    margin: 0 auto;
+    margin-top: 30px;
+    margin-bottom: 40px;
+    cursor: pointer;
+}
+.modal-form-btn:focus,
+.modal-form-btn:hover{
+    color: #FFFFFF;
+    background: #2196F3;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+}
+.accept-label::before{
+    content: "";
+    width: 16px;
+    height: 16px;
+    border: 1px solid #212121;
+    margin-right: 8px;
+    box-sizing: border-box;
+    border-radius: 2px; 
+}
+.modal-label-input-check:checked + .accept-label::before{
+    background-color: #2196F3;
+    border: none;
+    background-image: url(../images/Vector.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+
+/* ukryty oryginnalny checkbox */
+.visually-hidden{
+    position: absolute !important;
+    clip: rect(1px 1px 1px 1px);
+    clip: rect(1px, 1px, 1px, 1px);
+    padding: 0 !important;
+    border: 0 !important;
+    height: 1px !important;
+    width: 1px !important;
+    overflow: hidden;
+}
+.modal-input-wrapper{
+    position: relative;
+}
+.modal-input-icon{
+    position: absolute;
+    top: 15px;
+    left: 52px;
+}
+.modal-label-input:focus{
+    border-color: #2196F3;
+    outline: none;
+}
+.modal-label-input:focus + .modal-input-icon{
+    fill: #2196F3;
+    outline: none;
+}
+.modal-label-textarea:focus{
+    border-color: #2196F3;
+    outline: none;
+}
+
+/* jeszcze animacje! do button i wszytkich hover focus
 A potem hover, focus, svg i przejścia!
 nie zapomnij o hsvg w stopce */
 /*==== END MODAL ====*/
