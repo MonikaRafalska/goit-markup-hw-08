@@ -595,6 +595,7 @@ img{
     padding-top: 13px;
     padding-bottom: 13px;
 }
+/* wrapper + disclaimer = input i button w jednej linii */
 .footer-form-wrapper{
     display: flex;
     align-items: center;
