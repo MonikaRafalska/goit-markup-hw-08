@@ -50,7 +50,26 @@ img{
 
 /*==== COMPONENTS ====*/
 
-.logo-web,
+.logo{
+    font-family: var(--secondary-font);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.192;
+    letter-spacing: 0.03em;
+    text-decoration: none;
+}
+.logo__accent-text{
+    color: var(--main-color);
+}
+.logo--dark-theme{
+    color: var(--logo-studio-color);
+    margin-right: 93px;
+}
+.logo--light-theme{
+    color: var(--third-text-color)
+}
+/* .logo-web,
 .logo-studio,
 .logo-studio-white{
     font-family: var(--secondary-font);
@@ -66,8 +85,27 @@ img{
 }
 .logo-studio-white{
     color: var(--third-text-color)
-}
+} TO DO USUNIECIA*/
 
+/* TO JE DOBRY BUTTON- BAZOWY WZÓR DLA WSZYTKICH */
+.button{
+    min-width: 200px;
+    min-height: 50px;
+    background-color: var(--third-background-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    border: 0px;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    cursor: pointer;
+}
+.button:hover,
+.button:focus{
+    color: var(--third-text-color);
+    background-color: var(--main-color);
+    cursor: pointer;
+}
+XXXXXXX
 .filters-modal-btn,
 .hero-modal-btn{
     font-weight: 500;
@@ -91,8 +129,6 @@ img{
     padding-bottom: 50px;
 }
 
-.navigation-list-link:hover,
-.navigation-list-link:focus,
 .contact-list-link:hover,
 .contact-list-link:focus,
 .contact-list-link:active,
@@ -117,24 +153,7 @@ img{
 .section-footer{
     background-color: var(--secondary-background-color);
 }
-.navigation-list-item{
-    position: relative;
-}
-.navigation-list-item:nth-child(n+2)::after{
-    position: absolute;
-    content: "";
-    width: 100%;
-    height: 4px;
-    display: block;
-    border-radius: 2px;
-    background-color: var(--main-color);
-    left: 0;
-    bottom: -39px;
-    opacity: 0;
-}
-.navigation-list-item:hover::after{
-    opacity: 1;
-}
+
 /*==== END COMPONENTS ====*/
 
 /*==== HEADER ====*/
@@ -146,31 +165,99 @@ img{
     border-bottom: 1px solid #ECECEC;
 }
 
-.navigation-list, 
-.contact-list{
+.navigation{
     display: flex;
     align-items: center;
     justify-content: center;
+    list-style: none;
 }
-
-.logo{
-    margin-right: 93px;
-    padding-top: 24px;
-    padding-bottom: 25px;
-}
-   
-.navigation-list-item:not(:last-child){
+.navigation__item{
     margin-right: 46px;
+    position: relative;
 }
-.header .contact-list{
-    margin-left: auto;
+/* odstęp między kontakt a info@... */
+.navigation__item--last-child{
+    margin-right: 345px;
 }
-.contact-list-item{
-    margin-right: 50px;
+.navigation__link{
+    font-family: var(--main-font);
+    font-style: 400;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.142;
+    letter-spacing: 0.02em;
+    color: var(--secondary-color);
+    text-decoration: none;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.navigation__link:hover,
+.navigation__link:focus{
+    color: var(--main-color);
+}
+.navigation__item::after{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 4px;
+    display: block;
+    border-radius: 2px;
+    background-color: var(--main-color);
+    left: 0;
+    bottom: -39px;
+    opacity: 0;
+}
+.navigation__item:hover::after{
+    opacity: 1;
+} 
+
+.contact{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+}
+.contact__item--first-child{
+    margin-right: 30px;
+}
+.contact__link{
+    font-family: var(--main-font);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.142;
+    letter-spacing: 0.02em;
+    color: var(--description-color);
+    text-decoration: none;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.contact__icon{
+    fill: #757575;
+    margin-right: 10px;
+}
+.contact__link:hover,
+.contact__link:focus,
+.contact__link:active{
+    color: var(--main-color);
 }
 
-.navigation-list-link,
-.contact-list-link,
+.contact__icon:hover,
+.contact__icon:focus,
+.contact__icon:active{
+    fill: var(--main-color);
+}
+.contact__link:hover .contact__icon,
+.contact__link:focus .contact__icon,
+.contact__link:active .contact__icon{
+    fill:  var(--main-color);
+}
+
+/* .header .contact-list{
+    margin-left: auto; NIE MAM POJECIA CO TO ROBI I NA RAZIE OLANE!!!!!!!!!!!!!
+} */
+
+/* A TU ROBI FOOTER TO NIE MAM POJECIA!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!-przeniosłam a to to usunaąć */
 .footer-link{
     font-weight: 500;
     font-size: 14px;
@@ -184,10 +271,10 @@ img{
 .contact-list-link{
     color: var(--description-color);
 }
-.contact-list-icon{
+/* .contact-list-icon{
     fill: #757575;
     margin-right: 10px;
-}
+} */
 
 .contact-list-link:hover .contact-list-icon,
 .contact-list-link:focus .contact-list-icon,
@@ -205,7 +292,7 @@ img{
 /*==== END HEADER ====*/
 
 /*==== HERO ====*/
-.section-hero{
+.hero{
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
     url(../images/herobackground.png);
     background-repeat: no-repeat;
@@ -215,12 +302,13 @@ img{
     padding-top: 0px;
     padding-bottom: 0px;
 }
-.section-hero .container{
+.hero .container{
     padding-top: 200px;
     padding-bottom: 200px;
 }
-
-.main-header{
+.hero__header{
+    font-family: var(--main-font);
+    font-style: normal
     font-weight: 900;
     font-size: 44px;
     line-height: 1.363;
@@ -231,45 +319,41 @@ img{
     margin: 0 auto;
     width: 696px;
     height: 120px;
-    margin-bottom: 30px;
-}   
-.hero-modal-btn{
+    margin-bottom: 30px
+}
+.button{
     font-weight: 700;
     line-height: 1.875;
     display: flex;
     align-items: center;
     letter-spacing: 0.06em;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    border-radius: 4px;
     padding: 10px 41px 10px 42px;
-    min-width: 200px;
     margin: 0 auto;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+/* ALE SIE JESZCZE ZASTANÓW CZY TO ZADZIAŁA TAK JAK MYSLISZ CZY TRZEBA BEDZIE ROBIC MODIFY DO KAZDEGO */
    
 /*==== END HERO ====*/
 
 /*==== ADVANTAGES ====*/
-.advantages-list{
- display: flex;
- align-items: center;
+.advantages__list{
+    display: flex;
+    align-items: center;
+    list-style: none;
 }
-
-.advantages-list-item:not(:last-child){
-    margin-right: 30px;
+.advantages__item{
+    margin-right: 30px
 }
-
-.advantages-icon{
+/* .advantages__item--last-child{
+    margin-right: 0px;
+} */
+.advantages__icon{
     display: flex;
     margin: 0 auto;
 }
-
-.advantages-list-icon:not(:last-child){
-    margin-right: 30px;
-}
-
-.advantages-list-icon{
+/* .advantages__icon--last-child{
+    margin-right: 30px a co z tymi dziadami?
+} */
+.advantages__gallery{
     display: flex;
     background-color: #F5F4FA;
     border-radius: 4px;
@@ -278,9 +362,8 @@ img{
     min-height: 120px;
     padding-top: 25px;
 }
-
-.advantages-list-header,
-.advantages-list-text{
+.advantages__name{
+    font-family: var(--main-font);
     font-weight: 700;
     font-size: 14px;
     line-height: 1.143;
@@ -289,36 +372,37 @@ img{
     width: 270px;
     height: 16px;
 }
-
-.advantages-list-text{
+.advantages__description{
+    font-family: var(--main-font);
+    font-style: normal;
     font-weight: 400;
+    font-size: 14px;
     line-height: 1.714;
+    letter-spacing: 0.03em;
     text-transform: none;
     color: var(--description-color);
+    width: 270px;
     height: 75px;
     margin-top: 10px;
     margin-bottom: 0px;
 }
-
-.section-advantages{
-    padding-bottom: 0px;
+.advantages{
+    padding-bottom: 0px
 }
 
 /*==== END ADVANTAGES ====*/
 
 /*==== ABOUT US ====*/
-.about-list{
+.about__list{
     display: flex;
     align-items: center;
+    list-style: none;
 }
-
-.about-list-item:not(:last-child){
+.about__item{
     margin-right: 30px;
+    position: relative
 }
-.about-list-item{
-    position: relative;
-}
-.about-list-item-text{
+.about__description{
     position: absolute;
     width: 144px;
     height: 16px;
@@ -338,32 +422,35 @@ img{
     bottom: 0;
 }
 
+/* .about-list-item:not(:last-child){
+    margin-right: 30px; CO Z TYM? OLAĆ?
+} */
+
 /*==== END ABOUT US ====*/
 
 
 /*==== OUR TEAM ====*/
-.team-list{
+.team{
     display: flex;
     align-items: center;
+    background-color: var(--third-background-color);
 }
-.team-list-item:not(:last-child){
-  margin-right: 30px;  
+.team__list{
+    list-style: none;
+    display: flex;
 }
-.team-list-item{
+.team__item{
+    margin-right: 30px;
     background: var(--main-background-color);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
-    }
-
-.team-list-img{
+}
+.team__image{
     margin-bottom: 30px;
 }
-
-.section-team{
-    background-color: var(--third-background-color);
-}
-.team-list-text,
-.team-list-text-description{
+.team__name{
+    font-family: var(--main-font);
+    font-style: normal;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.187;
@@ -371,26 +458,26 @@ img{
     letter-spacing: 0.03em;
     margin-bottom: 10px;
 }
-
-.team-list-text-description{
+.team__workplace{
+    font-family: var(--main-font);
+    font-style: normal;
     font-weight: 400;
     color: var(--description-color);
+    font-size: 16px;
+    line-height: 1.187;
+    text-align: center;
+    letter-spacing: 0.03em;
+    margin-bottom: 10px;
 }
-
-.team-social-list{
+.social__list{
     display: flex;
     align-items: center;
     justify-content: center;
     margin-right: 16px;
     margin-bottom: 30px;
+    list-style: none;
 }
-
-.team-icon{
-    width: 20px;
-    height: 20px;
-}
-
-.team-social-list-item{
+.social__item{
     display: flex;
     background-color: var(--main-background-color);
     border-radius: 50%;
@@ -401,40 +488,29 @@ img{
     fill: #AFB1B8;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.team-social-list-item:not(:last-child){
     margin-right: 10px;
 }
-
-.team-social-list-item:hover,
-.team-social-list-item:focus{
-    fill: var(--third-text-color);
-    background-color: var(--main-color);
-
-
+.social__icon{
+    width: 20px;
+    height: 20px;
 }
+.social__item:hover,
+.social__item:focus{
+    fill: var(--third-text-color);
+    background-color: var(--main-color)
+}
+
 /*==== END OUR TEAM ====*/
 
 
 /*==== OUR CUSTOMERS ====*/
-.customers-list{
+.customers__list{
     display: flex;
     align-items: center;
     justify-content: center;
+    list-style: none;
 }
-
-.customers-list-item:not(:last-child){
-    margin-right: 30px;
-}
-
-.customer-icon{
-    display: flex;
-    width: 106px;
-    height: 60px;
-}
-
-.customers-list-item{
+.customers__item{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -445,22 +521,62 @@ img{
     border-radius: 4px;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    margin-right: 30px;
 }
-
-.customers-list-item:hover,
-.customers-list-item:focus{
+.customers__icon{
+    display: flex;
+    width: 106px;
+    height: 60px;
+}
+.customers__item:hover,
+.customers__item:focus{
     border: 1px solid var(--main-color);
     fill: var(--main-color);
 }
+
 /*==== END OUR CUSTOMERS ====*/
 
 
 /*==== FOOTER ====*/
-.section-footer {
+.footer{
     padding-top: 60px;
     padding-bottom: 60px;
+    background-color: var(--secondary-background-color);
 }
-.section-footer .container{
+.footer .container{
+    display: flex;
+}
+.footer__addres{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.714;
+    letter-spacing: 0.03em;
+    color: var(--third-text-color);
+    margin-top: 20px;
+    margin-bottom: 9px;
+}
+.contact--footer-theme{
+    display: block;
+}
+.contact__item--footer-theme{
+    margin-bottom: 9px;
+}
+.contact__link--footer-theme{
+    font-family: var(--main-font);
+    font-weight: normal;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.714;
+    letter-spacing: 0.03em;
+    color: var(--footer-contact-color);
+}
+/* .section-footer {
+    padding-top: 60px;
+    padding-bottom: 60px;
+} */
+
+/* .section-footer .container{
     display: flex;
 }
 .footer-left-side .container{
@@ -478,8 +594,17 @@ img{
 }
 .addres{
     margin-top: 20px;
-}
-    
+} */
+/* .footer-link{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.142;
+    letter-spacing: 0.02em;
+    color: var(--secondary-color);
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}  to jest teraz contact z footer theme*/
+
 .footer-contact,
 .footer-contact-portfolio-email{
     color: var(--footer-contact-color);
@@ -492,13 +617,56 @@ img{
 .footer-contact:not(:last-child){
     padding-bottom: 9px;
 }
-
-.footer-social{
+/* ==================================chyba przekombinowałam z tym footer theme, coś misię tui nie podoba! i ten nieszczesny bcg */
+.social--footer-theme{
     width: 206px;
     height: 80px;
     margin-left: 70px;
     padding-top: 12px;
 }
+.social__title{
+    font-family: var(--main-font);
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.143;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--third-text-color);
+    min-width: 113px;
+    min-height: 16px;
+    margin-bottom: 20px;
+}
+/* CO z tym dziadostwem zrobić? */
+.social__item--footer-theme{
+    background: none;
+}
+
+.social__icon--footer-theme{
+    width: 20px;
+    height: 20px;
+}
+.social__link--footer-theme{
+    display: flex;
+    min-width: 44px;
+    min-height: 44px;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    fill: var(--main-background-color);
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.social__link--footer-theme:hover,
+.social__link--footer-theme:focus{
+    background-color: var(--main-color);
+}
+/* .footer-social{
+    width: 206px;
+    height: 80px;
+    margin-left: 70px;
+    padding-top: 12px;
+} */
 
 .footer-social-text{
     font-weight: 700;
@@ -510,16 +678,15 @@ img{
     min-width: 113px;
     min-height: 16px;
     margin-bottom: 20px;
-
 }
-.footer-social-list,
+/* .footer-social-list,
 .footer-social-list-item{
     display: flex;
     align-items: center;
     justify-content: center;
 }
 .footer-social-list-link:not(:last-child){
-    margin-right: 10px;
+    margin-right: 10px; to jest zaciągnięte z social wyżej*/
 }
 .footer-icon{
     width: 20px;
