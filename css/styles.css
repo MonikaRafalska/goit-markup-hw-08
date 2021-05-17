@@ -11,33 +11,26 @@
     --secondary-background-color: #2F303A;
     --third-background-color: #F5F4FA;
 }
-body {
+/* body {
     font-family: var(--main-font);
     color: var(--secondary-color);
     background-color: var(--main-background-color);
-}
-h1,
-h2,
-h3,
-h4,
-h6,
+} */
+
+
 ul,
 p {
     margin: 0;
     padding: 0;
 }
 
-img{
+/* img{
     display: block;
-}
+} */
 
-.list{
-    list-style: none;
-}
-.link{
-    text-decoration: none;
-}
 
+
+/*==== COMPONENTS ====*/
 .container{
     width: 1200px;
     padding: 15px;
@@ -47,8 +40,6 @@ img{
     padding-top: 94px;
     padding-bottom: 94px;
 }
-
-/*==== COMPONENTS ====*/
 
 .logo{
     font-family: var(--secondary-font);
@@ -69,26 +60,9 @@ img{
 .logo--light-theme{
     color: var(--third-text-color)
 }
-/* .logo-web,
-.logo-studio,
-.logo-studio-white{
-    font-family: var(--secondary-font);
-    font-style: normal;
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 1.192;
-    letter-spacing: 0.03em;
-    color: var(--main-color);
-}
-.logo-studio{
-    color: var(--logo-studio-color);
-}
-.logo-studio-white{
-    color: var(--third-text-color)
-} TO DO USUNIECIA*/
-
-/* TO JE DOBRY BUTTON- BAZOWY WZÓR DLA WSZYTKICH dupa to jest tylko dla hero! zmień to */
 .button{
+    font-family: var(--main-font);
+    font-style: normal;
     min-width: 200px;
     min-height: 50px;
     background-color: var(--third-background-color);
@@ -105,21 +79,9 @@ img{
     background-color: var(--main-color);
     cursor: pointer;
 }
-XXXXXXX
-.filters-modal-btn,
-.hero-modal-btn{
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.625;
-    text-align: center;
-    letter-spacing: 0.03em;
-    background-color: var(--third-background-color);
-    border-radius: 4px;
-    border: 0px;
-    padding: 6px 22px;
-}
-
 .secondary-header{
+    font-family: var(--main-font);
+    font-style: normal;
     font-weight: 700;
     font-size: 36px;
     line-height: 1.166;
@@ -128,32 +90,6 @@ XXXXXXX
     margin: 0 auto;
     padding-bottom: 50px;
 }
-
-.contact-list-link:hover,
-.contact-list-link:focus,
-.contact-list-link:active,
-.footer-contact:hover,
-.footer-contact:focus,
-.footer-contact-portfolio-email:hover,
-.footer-contact-portfolio-email:focus{
-    color:var(--main-color)
-}
-
-
-.hero-modal-btn:hover,
-.hero-modal-btn:focus,
-.filters-modal-btn:hover,
-.filters-modal-btn:focus{
-    color: var(--third-text-color);
-    background-color: var(--main-color);
-    cursor: pointer;
-}
-
-.section-hero,
-.section-footer{
-    background-color: var(--secondary-background-color);
-}
-
 /*==== END COMPONENTS ====*/
 
 /*==== HEADER ====*/
@@ -253,42 +189,6 @@ XXXXXXX
     fill:  var(--main-color);
 }
 
-/* .header .contact-list{
-    margin-left: auto; NIE MAM POJECIA CO TO ROBI I NA RAZIE OLANE!!!!!!!!!!!!!
-} */
-
-/* A TU ROBI FOOTER TO NIE MAM POJECIA!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!-przeniosłam a to to usunaąć */
-.footer-link{
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.142;
-    letter-spacing: 0.02em;
-    color: var(--secondary-color);
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.contact-list-link{
-    color: var(--description-color);
-}
-/* .contact-list-icon{
-    fill: #757575;
-    margin-right: 10px;
-} */
-
-.contact-list-link:hover .contact-list-icon,
-.contact-list-link:focus .contact-list-icon,
-.contact-list-link:active .contact-list-icon{
-    fill: var(--main-color)
-}
-
-.contact-list-icon:hover,
-.contact-list-icon:focus,
-.contact-list-icon:active{
-    fill: var(--main-color);
-    /*background-color: var(--third-background-color);*/
-}
-
 /*==== END HEADER ====*/
 
 /*==== HERO ====*/
@@ -308,7 +208,7 @@ XXXXXXX
 }
 .hero__header{
     font-family: var(--main-font);
-    font-style: normal
+    font-style: normal;
     font-weight: 900;
     font-size: 44px;
     line-height: 1.363;
@@ -330,7 +230,7 @@ XXXXXXX
     padding: 10px 41px 10px 42px;
     margin: 0 auto;
 }
-/* ALE SIE JESZCZE ZASTANÓW CZY TO ZADZIAŁA TAK JAK MYSLISZ CZY TRZEBA BEDZIE ROBIC MODIFY DO KAZDEGO */
+
    
 /*==== END HERO ====*/
 
@@ -339,6 +239,7 @@ XXXXXXX
     display: flex;
     align-items: center;
     list-style: none;
+    
 }
 .advantages__item{
     margin-right: 30px
@@ -400,9 +301,10 @@ XXXXXXX
 }
 .about__item{
     margin-right: 30px;
-    position: relative
+    position: relative;
 }
 .about__description{
+    font-family: var(--main-font);
     position: absolute;
     width: 144px;
     height: 16px;
@@ -422,9 +324,6 @@ XXXXXXX
     bottom: 0;
 }
 
-/* .about-list-item:not(:last-child){
-    margin-right: 30px; CO Z TYM? OLAĆ?
-} */
 
 /*==== END ABOUT US ====*/
 
@@ -490,7 +389,9 @@ XXXXXXX
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     margin-right: 10px;
 }
-
+.social__item--last-child{
+    margin-right: 0px;
+}
 .social__icon{
     width: 20px;
     height: 20px;
@@ -548,6 +449,7 @@ XXXXXXX
     display: flex;
 }
 .footer__addres{
+    font-family: var(--main-font);
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
@@ -653,6 +555,8 @@ XXXXXXX
     margin-left: 78px
 }
 .newsletter__title{
+    font-family: Roboto;
+    font-style: normal; 
     width: 207px;
     height: 16px;
     font-weight: 700;
@@ -675,6 +579,8 @@ XXXXXXX
     justify-content: center;
 }
 .newsletter__input{
+    font-family: var(--main-font);
+    font-style: normal;
     width: 358px;
     height: 50px;
     border: 1px solid rgba(255, 255, 255, 0.3);
@@ -801,8 +707,11 @@ XXXXXXX
     margin-right: 24px;
     margin-left: 24px;
     width: 322px;
+
 }
 .projects__description{
+    font-family: Roboto;
+    font-style: normal;
     font-size: 16px;
     line-height: 1.875;
     letter-spacing: 0.03em;
@@ -835,6 +744,8 @@ XXXXXXX
     transform: translateY(0);
 }
 .overlay__text{
+    font-family: Roboto;
+    font-style: normal;
     width: 301px;
     height: 196px;
     font-style: normal;
@@ -844,6 +755,7 @@ XXXXXXX
     letter-spacing: 0.03em;
     color: var(--third-text-color);
     margin: 49px 45px 49px 24px;
+    
 }
 
 /*==== END PROJECTS ====*/
@@ -896,6 +808,8 @@ XXXXXXX
 
 /*==== MODAL ====*/
 .modal__tittle{
+    font-family: var(--main-font);
+    font-style: normal;
     width: 448px;
     height: 23px;
     font-weight: 700;
@@ -909,7 +823,7 @@ XXXXXXX
     margin-bottom: 12px;
 }
 .modal__accept-link{
-    font-family: Roboto;
+    font-family: var(--main-font);
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
@@ -919,6 +833,8 @@ XXXXXXX
     color: #2196F3;
 }
 .modal__label{
+    font-family: var(--main-font);
+    font-style: normal;
     height: 14px;
     font-size: 12px;
     line-height: 14px;
@@ -930,6 +846,8 @@ XXXXXXX
     display: flex;
 }
 .modal__input{
+    font-family: var(--main-font);
+    font-style: normal;
     width: 448px;
     height: 40px;
     border: 1px solid rgba(33, 33, 33, 0.2);
@@ -941,6 +859,8 @@ XXXXXXX
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal__textarea{
+    font-family: var(--main-font);
+    font-style: normal;
     position: relative;
     width: 448px;
     height: 120px;
@@ -958,6 +878,8 @@ XXXXXXX
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal__accept-label{
+    font-family: var(--main-font);
+    font-style: normal;
     font-style: 400;
     font-weight: normal;
     font-size: 14px;
@@ -971,11 +893,18 @@ XXXXXXX
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .button--modal-theme{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 30px;
     padding: 6px 22px;
     padding: 10px 76px;
     margin: 0 auto;
     margin-top: 30px;
     margin-bottom: 40px;
+    align-items: center;
+    margin-left: 157px;
 
 }
 .modal__accept-label::before{
