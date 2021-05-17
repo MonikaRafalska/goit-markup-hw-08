@@ -87,7 +87,7 @@ img{
     color: var(--third-text-color)
 } TO DO USUNIECIA*/
 
-/* TO JE DOBRY BUTTON- BAZOWY WZÓR DLA WSZYTKICH */
+/* TO JE DOBRY BUTTON- BAZOWY WZÓR DLA WSZYTKICH dupa to jest tylko dla hero! zmień to */
 .button{
     min-width: 200px;
     min-height: 50px;
@@ -321,7 +321,7 @@ XXXXXXX
     height: 120px;
     margin-bottom: 30px
 }
-.button{
+.button--hero-theme{
     font-weight: 700;
     line-height: 1.875;
     display: flex;
@@ -490,6 +490,7 @@ XXXXXXX
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     margin-right: 10px;
 }
+
 .social__icon{
     width: 20px;
     height: 20px;
@@ -571,40 +572,6 @@ XXXXXXX
     letter-spacing: 0.03em;
     color: var(--footer-contact-color);
 }
-/* .section-footer {
-    padding-top: 60px;
-    padding-bottom: 60px;
-} */
-
-/* .section-footer .container{
-    display: flex;
-}
-.footer-left-side .container{
-    display: flex;
-}
-
-.addres,
-.footer-contact{
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.714;
-    letter-spacing: 0.03em;
-    color: var(--third-text-color);
-}
-.addres{
-    margin-top: 20px;
-} */
-/* .footer-link{
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.142;
-    letter-spacing: 0.02em;
-    color: var(--secondary-color);
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}  to jest teraz contact z footer theme*/
-
 .footer-contact,
 .footer-contact-portfolio-email{
     color: var(--footer-contact-color);
@@ -617,7 +584,7 @@ XXXXXXX
 .footer-contact:not(:last-child){
     padding-bottom: 9px;
 }
-/* ==================================chyba przekombinowałam z tym footer theme, coś misię tui nie podoba! i ten nieszczesny bcg */
+/* ============footer-theme====================== */
 .social--footer-theme{
     width: 206px;
     height: 80px;
@@ -635,10 +602,16 @@ XXXXXXX
     min-width: 113px;
     min-height: 16px;
     margin-bottom: 20px;
+   
 }
-/* CO z tym dziadostwem zrobić? */
+/* social__item--mixin */
 .social__item--footer-theme{
     background: none;
+}
+.social__item--footer-theme:hover,
+.social__item--footer-theme:focus{
+    background: none;
+    fill: none;
 }
 
 .social__icon--footer-theme{
@@ -656,17 +629,13 @@ XXXXXXX
     fill: var(--main-background-color);
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    margin-right: 10px;
 }
 .social__link--footer-theme:hover,
 .social__link--footer-theme:focus{
     background-color: var(--main-color);
 }
-/* .footer-social{
-    width: 206px;
-    height: 80px;
-    margin-left: 70px;
-    padding-top: 12px;
-} */
+
 
 .footer-social-text{
     font-weight: 700;
@@ -679,41 +648,11 @@ XXXXXXX
     min-height: 16px;
     margin-bottom: 20px;
 }
-/* .footer-social-list,
-.footer-social-list-item{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.footer-social-list-link:not(:last-child){
-    margin-right: 10px; to jest zaciągnięte z social wyżej*/
-}
-.footer-icon{
-    width: 20px;
-    height: 20px;
-}
 
-.footer-social-list-link{    
-    display: flex;
-    min-width: 44px;
-    min-height: 44px;
-    align-items: center;
-    justify-content: center;
-    background-color: rgba(255, 255, 255, 0.1);
-    border-radius: 50%;
-    fill: var(--main-background-color);
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+.newsletter{
+    margin-left: 78px
 }
-.footer-social-list-link:hover,
-.footer-social-list-link:focus{
-    background-color: var(--main-color);
-}
-
-.footer-newsletter{
-    margin-left: 78px;
-}
-.footer-newsletter-info{
+.newsletter__title{
     width: 207px;
     height: 16px;
     font-weight: 700;
@@ -724,7 +663,18 @@ XXXXXXX
     color: var(--third-text-color);
     margin-bottom: 20px;
 }
-.footer-form-input{
+/* wrapper + disclaimer = input i button w jednej linii */
+.newslettter__wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.newslettter__disclaimer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.newsletter__input{
     width: 358px;
     height: 50px;
     border: 1px solid rgba(255, 255, 255, 0.3);
@@ -734,7 +684,7 @@ XXXXXXX
     background-color: transparent;
     margin-right: 12px;
 }
-.newsletter-btn{
+.newsletter__button{
     width: 200px;
     height: 50px;
     min-width: 82px;
@@ -755,102 +705,117 @@ XXXXXXX
     border: none;
     cursor: pointer;
 }
-.newsletter-icon{
-    width: 24px;
+.newsletter__icon{
+     width: 24px;
     min-height: 24px;
     margin-left: 24px;
     padding-top: 13px;
     padding-bottom: 13px;
 }
-/* wrapper + disclaimer = input i button w jednej linii */
-.footer-form-wrapper{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.footer-form-disclaimer{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.contact__link--portfolio-theme{
+    text-decoration: underline;
 }
 /*==== END FOOTER ====*/
 
 /*========================== PORTFOLIO.HTML ========================*/
 
 /*==== FILTERS ====*/
-.section-filters{
+.filters{
     padding-bottom: 16px;
 }
-.filters-list{
+.filters__list{
     display: flex;
     align-items: center;
     justify-content: center;
+    list-style: none;
 }
-.filters-list-item:not(:last-child){
+.filters__item{
     margin-right: 8px;
-}
-.filters-list-item:hover,
-.filters-list-item:focus{
-    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-}
-.filters-list-item{
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+.filters__item:hover,
+.filters__item:focus{
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+.filters__btn{
+    font-family: var(--main-font);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.625;
+    text-align: center;
+    letter-spacing: 0.03em;
+    background-color: var(--third-background-color);
+    border-radius: 4px;
+    border: 0px;
+    padding: 6px 22px;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.filters__btn:hover,
+.filters__btn:focus{
+    color: var(--third-text-color);
+    background-color: var(--main-color);
+    cursor: pointer;
+}
+
 /*==== END FILTERS ====*/
 
 /*==== PROJECTS ====*/
-.section-project{
+.project{
     padding-top: 34px;
     margin: 0 auto;
 }
-.projects-list{
+.projects__list{
     display: flex;
     flex-wrap: wrap;
+    list-style: none;
 }
-.projects-list-item-img{
-    display: block;
-    padding-bottom: 20px;
-}
-.projects-list-item{
+.projects__item{
     width: 370px;
     background: var(--main-background-color);
     border: 1px solid #EEEEEE;
     box-sizing: border-box;
-}
-.projects-list-item:not(:nth-child(3n)){
     margin-right: 30px;
+    margin-top: 30px
 }
-
-.projects-list-item:not(:nth-child(-n + 3)){
-    margin-top: 30px;
+.projects__item--each-third-child{
+    margin-right: 0px
 }
-
-.projects-list-text{
+.projects__item--first-three-child{
+    margin-top: 0px
+}
+.projects__img{
+    display: block;
+    padding-bottom: 20px;
+}
+.projects__text{
+    font-family: var(--main-font);
+    font-style: normal;
     font-weight: 700;
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
     padding-bottom: 4px;
-    
+    margin-right: 24px;
+    margin-left: 24px;
+    width: 322px;
 }
-.projects-list-text-description{
+.projects__description{
     font-size: 16px;
     line-height: 1.875;
     letter-spacing: 0.03em;
     color: var(--description-color);
     padding-bottom: 20px;
-}
-.projects-list-text,
-.projects-list-text-description{
     margin-right: 24px;
     margin-left: 24px;
     width: 322px;
 }
-.projects-list-item:hover{
+.projects__item:hover{
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
-.projects-div{
+.projects__div{
     position: relative;
     overflow: hidden;
     width: 370px;
@@ -866,10 +831,10 @@ XXXXXXX
     background-color: rgba(33, 150, 243, 0.9);
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.projects-list-item:hover .overlay{
+.projects__item:hover .overlay{
     transform: translateY(0);
 }
-.overlay-text{
+.overlay__text{
     width: 301px;
     height: 196px;
     font-style: normal;
@@ -880,6 +845,7 @@ XXXXXXX
     color: var(--third-text-color);
     margin: 49px 45px 49px 24px;
 }
+
 /*==== END PROJECTS ====*/
 
 
@@ -905,7 +871,7 @@ XXXXXXX
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
 }
-.close-btn{
+.modal__close-btn{
     position: absolute;
     display: flex;
     align-items: center;
@@ -929,7 +895,7 @@ XXXXXXX
 /*==== END BACKDROP ====*/
 
 /*==== MODAL ====*/
-.modal-form-tittle{
+.modal__tittle{
     width: 448px;
     height: 23px;
     font-weight: 700;
@@ -942,8 +908,7 @@ XXXXXXX
     margin-top: 40px;
     margin-bottom: 12px;
 }
-
-.accept-link{
+.modal__accept-link{
     font-family: Roboto;
     font-style: normal;
     font-weight: normal;
@@ -953,7 +918,7 @@ XXXXXXX
     text-decoration-line: underline;
     color: #2196F3;
 }
-.modal-label{
+.modal__label{
     height: 14px;
     font-size: 12px;
     line-height: 14px;
@@ -963,9 +928,8 @@ XXXXXXX
     margin-bottom: 4px;
     margin-left: 40px;
     display: flex;
-    
 }
-.modal-label-input{
+.modal__input{
     width: 448px;
     height: 40px;
     border: 1px solid rgba(33, 33, 33, 0.2);
@@ -975,8 +939,8 @@ XXXXXXX
     padding-left: 30px;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-} 
-.modal-label-textarea{
+}
+.modal__textarea{
     position: relative;
     width: 448px;
     height: 120px;
@@ -993,7 +957,7 @@ XXXXXXX
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.accept-label{
+.modal__accept-label{
     font-style: 400;
     font-weight: normal;
     font-size: 14px;
@@ -1006,55 +970,30 @@ XXXXXXX
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.modal-form-btn{
-    width: 200px;
-    height: 50px;
-    min-width: 48px;
-    min-height: 30px;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 30px;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    letter-spacing: 0.06em;
-    background-color: var(--third-background-color);
-    border-radius: 4px;
-    border: 0px;
+.button--modal-theme{
     padding: 6px 22px;
     padding: 10px 76px;
     margin: 0 auto;
     margin-top: 30px;
     margin-bottom: 40px;
-    cursor: pointer;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
 }
-.modal-form-btn:focus,
-.modal-form-btn:hover{
-    color: #FFFFFF;
-    background: #2196F3;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    border-radius: 4px;
-}
-.accept-label::before{
+.modal__accept-label::before{
     content: "";
     width: 16px;
     height: 16px;
     border: 1px solid #212121;
     margin-right: 8px;
     box-sizing: border-box;
-    border-radius: 2px; 
+    border-radius: 2px;
 }
-.modal-label-input-check:checked + .accept-label::before{
+.modal__check:checked + .modal__accept-label::before{
     background-color: #2196F3;
     border: none;
     background-image: url(../images/Vector.svg);
     background-repeat: no-repeat;
     background-size: contain;
 }
-
 
 /* ukryty oryginnalny checkbox */
 .visually-hidden{
@@ -1067,26 +1006,28 @@ XXXXXXX
     width: 1px !important;
     overflow: hidden;
 }
-.modal-input-wrapper{
+
+.modal__wrapper{
     position: relative;
 }
-.modal-input-icon{
+.modal__icon{
     position: absolute;
     top: 15px;
     left: 52px;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.modal-label-input:focus{
+.modal__input:focus{
     border-color: #2196F3;
     outline: none;
 }
-.modal-label-input:focus + .modal-input-icon{
+.modal__input:focus + .modal__icon{
     fill: #2196F3;
     outline: none;
 }
-.modal-label-textarea:focus{
+.modal__textarea:focus{
     border-color: #2196F3;
     outline: none;
 }
+
 /*==== END MODAL ====*/
