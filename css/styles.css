@@ -754,8 +754,7 @@ ul{
     line-height: 1.555;
     letter-spacing: 0.03em;
     color: var(--third-text-color);
-    margin: 49px 45px 49px 24px;
-    
+    margin: 49px 45px 49px 24px; 
 }
 
 /*==== END PROJECTS ====*/
@@ -905,7 +904,6 @@ ul{
     margin-bottom: 40px;
     align-items: center;
     margin-left: 157px;
-
 }
 .modal__accept-label::before{
     content: "";
