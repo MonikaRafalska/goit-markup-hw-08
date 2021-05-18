@@ -606,6 +606,9 @@ ul {
 }
 
 .newsletter__button {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 700;
   width: 200px;
   height: 50px;
   min-width: 82px;
