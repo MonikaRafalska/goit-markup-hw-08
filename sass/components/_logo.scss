@@ -2,8 +2,8 @@
     font-family: var(--secondary-font);
     font-style: normal;
     font-weight: 700;
-    font-size: 26px;
-    line-height: 1.192;
+    font-size: 24px;
+    line-height: 1.166;
     letter-spacing: 0.03em;
     text-decoration: none;
 }
@@ -17,3 +17,36 @@
 .logo--light-theme{
     color: var(--third-text-color)
 }
+.logo--footer-theme{
+    text-align: center;
+}
+
+@media screen and (min-width: 768px){
+    .logo--footer-theme{
+        padding-left: 115px;
+    }
+}
+@media screen and (min-width: 1200px){
+    .logo--footer-theme{
+        padding-left: 0px;
+    }
+}
+// .logo{
+//     font-family: var(--secondary-font);
+//     font-style: normal;
+//     font-weight: 700;
+//     font-size: 26px;
+//     line-height: 1.192;
+//     letter-spacing: 0.03em;
+//     text-decoration: none;
+// }
+// .logo__accent-text{
+//     color: var(--main-color);
+// }
+// .logo--dark-theme{
+//     color: var(--logo-studio-color);
+//     margin-right: 93px;
+// }
+// .logo--light-theme{
+//     color: var(--third-text-color)
+// }
