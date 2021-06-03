@@ -13,7 +13,7 @@
 </head>
 <body>
     <header class="header">
-        <div class="container">
+        <div class="container header__container">
             <a href="index.html" class="logo logo--dark-theme"><span class="logo__accent-text">Web</span>Studio</a>
             <nav class="menu">
                 <ul class="navigation">
@@ -28,6 +28,11 @@
                     </li>
                 </ul>
             </nav>
+            <button type="button" class="burger__btn" data-menu-button>
+                <svg width="24" height="16" class="burger__icon" aria-label="mobile-menu">
+                    <use href="./images/burger.svg#icon-menu_burger"></use>
+                </svg>
+            </button>
             <ul class="contact">
                 <li class="contact__item contact__item--first-child">
                     <a class="contact__link" href="mailto:info@devstudio.com">
@@ -47,8 +52,8 @@
     </header>
     <main>
         <!--FILTERS-->
-        <section class="filters section">
-            <div class="container">
+        <section class="filters">
+            <div class="container ">
                 <h2 hidden>Filters</h2>
                 <ul class="filters__list">
                     <li class="filters__item">
@@ -225,7 +230,7 @@
     
             <div class="social social--footer-theme">
                 <p class="social__title">Dołącz do nas</p>
-                <ul class="social__list">
+                <ul class="social__list social__list--footer-theme">
                     <li class="social__item social__item--footer-theme">
                         <a href="#" class="social__link social__link--footer-theme">
                             <svg class="social__icon social__icon--footer-theme">
@@ -260,7 +265,7 @@
                                     placeholder="E-mail" />
                     </label>
                     <button class="newsletter__button" type="submit">Zapisz się
-                        <svg class="newsletter__icon">
+                        <svg class="newsletter__icon" width="24px" height="24px">
                             <use href="./images/icons.svg#icon-icon-send"></use>
                         </svg>
                     </button>
