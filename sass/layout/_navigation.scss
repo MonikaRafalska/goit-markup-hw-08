@@ -1,5 +1,5 @@
 .navigation{
-    display: flex;
+    display: none;
     align-items: center;
     justify-content: center;
     list-style: none;
@@ -17,7 +17,7 @@
     border-radius: 2px;
     background-color: var(--main-color);
     left: 0;
-    bottom: -39px;
+    bottom: -32px;
     opacity: 0;
     }
 
@@ -25,10 +25,7 @@
     opacity: 1;
 } 
 }
-/* odstęp między kontakt a info@... */
-.navigation__item--last-child{
-    margin-right: 345px;
-}
+
 .navigation__link{
     font-family: var(--main-font);
     font-style: 400;
@@ -46,4 +43,76 @@
     color: var(--main-color);
     }
 }
+@media screen and (min-width: 768px){
+    .navigation{
+    display: flex;
+    }
+    .navigation__item{
+    margin-right: 60px;
+    position: relative;
+    margin-top: -30px;
+    }
+}
+@media screen and (min-width: 1200px){
+    .navigation{
+    display: flex;
+    }
+    .navigation__item{
+    margin-right: 46px;
+    position: relative;
+    margin-top: -30px;
+    }
+    /* odstęp między kontakt a info@... */
+    .navigation__item--last-child{
+    margin-right: 371px;
+    }
+}
+// .navigation{
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+//     list-style: none;
+// }
+// .navigation__item{
+//     margin-right: 46px;
+//     position: relative;
+
+//     &::after{
+//     position: absolute;
+//     content: "";
+//     width: 100%;
+//     height: 4px;
+//     display: block;
+//     border-radius: 2px;
+//     background-color: var(--main-color);
+//     left: 0;
+//     bottom: -39px;
+//     opacity: 0;
+//     }
+
+//     &:hover::after{
+//     opacity: 1;
+// } 
+// }
+// /* odstęp między kontakt a info@... */
+// .navigation__item--last-child{
+//     margin-right: 345px;
+// }
+// .navigation__link{
+//     font-family: var(--main-font);
+//     font-style: 400;
+//     font-weight: 500;
+//     font-size: 14px;
+//     line-height: 1.142;
+//     letter-spacing: 0.02em;
+//     color: var(--secondary-color);
+//     text-decoration: none;
+//     transition-duration: 250ms;
+//     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+//     &:hover,
+//     &:focus{
+//     color: var(--main-color);
+//     }
+// }
 

@@ -6,13 +6,13 @@
     line-height: 1.166;
     letter-spacing: 0.03em;
     text-decoration: none;
+    position: relative;
 }
 .logo__accent-text{
     color: var(--main-color);
 }
 .logo--dark-theme{
     color: var(--logo-studio-color);
-    margin-right: 93px;
 }
 .logo--light-theme{
     color: var(--third-text-color)
