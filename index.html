@@ -31,27 +31,27 @@
             </li>
             </ul>
         </nav>
-        <button type="button" class="burger__btn" data-menu-button>
-            <svg width="24" height="16" class="burger__icon" aria-label="mobile-menu">
-                <use href="./images/burger.svg#icon-menu_burger"></use>
-            </svg>
-        </button>
-            <ul class="contact list">
-            <li class="contact__item contact__item--first-child">
-                <a class="contact__link" href="mailto:info@devstudio.com">
-                    <svg class="contact__icon" width="16" height="12">
-                        <use href="./images/icons.svg#icon-letter"></use>
-                    </svg>info@devstudio.com</a>
-            </li>
-            <li class="contact__item">
-                <a class="contact__link" href="tel:+48111111111">
-                    <svg class="contact__icon" width="10" height="16">
-                        <use href="./images/icons.svg#icon-smartphone"></use>
-                    </svg>+48 111 111 111</a>
-            </li>
-            </ul>
-        </div>
-
+    <button type="button" class="burger__btn" data-mobile-open>
+        <svg width="24" height="16" class="burger__icon" aria-label="mobile-menu">
+            <use href="./images/burger.svg#icon-menu_burger"></use>
+        </svg>
+    </button>
+    <ul class="contact">
+        <li class="contact__item contact__item--first-child">
+            <a class="contact__link" href="mailto:info@devstudio.com">
+                <svg class="contact__icon" width="16" height="12">
+                    <use href="./images/icons.svg#icon-letter"></use>
+                </svg>info@devstudio.com</a>
+        </li>
+        <li class="contact__item">
+            <a class="contact__link" href="tel:+48111111111">
+                <svg class="contact__icon" width="10" height="16">
+                    <use href="./images/icons.svg#icon-smartphone"></use>
+                </svg>+48 111 111 111</a>
+        </li>
+    </ul>
+    </div>
+    
     </header>
     <main>
         <!--HERO-->
@@ -461,6 +461,51 @@
                 
             </div>
         </div>
+    </div>
+
+    <!-- MOBILE OKNO MODALNE -->
+    
+    <div class="backdrop is-hidden" mobile-menu>
+    <div class="menu-mobile">
+        <button type="button" class="menu-mobile__close" data-mobile-close>
+            <svg class="menu-mobile__icon">
+                <use href="./images/button-close.svg#icon-Vector"></use>
+            </svg>
+        </button>
+        <ul class="menu-mobile__list">
+            <li class="menu-mobile__item">
+                <a href="#" class="menu-mobile__link menu-mobile__link--first-child">Agencja</a>
+            </li>
+            <li class="menu-mobile__item">
+                <a href="portfolio.html" class="menu-mobile__link">Portfolio</a>
+            </li>
+            <li class="menu-mobile__item">
+                <a href="#" class="menu-mobile__link">Kontakt</a>
+            </li>
+        </ul>
+        <ul class="menu-contact__list">
+            <li class="menu-contact__item">
+                <a href="tel:+48111111111" class="menu-contact__link menu-contact__link--first-child">+48 111 111 111</a>
+            </li>
+            <li class="menu-contact__item">
+                <a href="mailto:info@devstudio.com" class="menu-contact__link menu-contact__link--second-child">info@devstudio.com</a>
+            </li>
+        </ul>
+        <ul class="menu-social__list">
+            <li class="menu-social__item">
+                <a href="#" class="menu-social__link">Instagram</a>
+            </li>
+            <li class="menu-social__item">
+                <a href="#" class="menu-social__link">Twitter</a>
+            </li>
+            <li class="menu-social__item">
+                <a href="#" class="menu-social__link">Facebook</a>
+            </li>
+            <li class="menu-social__item">
+                <a href="#" class="menu-social__link menu-social__link--last-child">LinkedIn</a>
+            </li>
+        </ul>
+    </div>
     </div>
 <script src="./js/modal.js"></script>
 <script src="./js/mobile-menu.js"></script>

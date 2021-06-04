@@ -1,0 +1,102 @@
+.menu-mobile{
+    box-sizing: border-box;
+    width: 480px;
+    height: 796px;
+    background-color: #fff;
+    position: absolute;
+    padding-top: 48px;
+    padding-left: 40px;
+}
+.menu-mobile__close{
+  position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 8px;
+    right: 8px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+    background-color: var(--main-background-color);
+    border: none;
+}
+.menu-mobile__icon{
+  position: absolute;
+  width: 16px;
+  height: 16px;
+    // top: 15px;
+    // left: 52px;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.menu-mobile__list{
+  list-style: none;
+}
+.menu-mobile__item{
+  padding-bottom: 32px;
+}
+.menu-mobile__link{
+  font-family: Roboto;
+  font-style: 400;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 1.175;
+  letter-spacing: 0.02em;
+ 
+  text-decoration: none;
+  color: black;
+}
+  .menu-mobile__link--first-child{
+ color: #2196F3;
+}
+  .menu-contact__list{
+  list-style: none;
+}
+  .menu-contact__item{
+  margin-bottom: 32px;
+}
+  .menu-contact__link{
+  text-decoration: none
+}
+.menu-contact__link--first-child{
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 40px;
+  letter-spacing: 0.02em;
+  color: #2196F3;
+}
+.menu-contact__link--second-child{
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: 0.02em;
+  color: #757575;
+}  
+.menu-social__list{
+  list-style: none;
+  display: flex;
+  padding-top: 64px;
+}
+.menu-social__item{
+  margin-right: 10px;
+}
+.menu-social__link{
+  text-decoration: none;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.222;
+  letter-spacing: 0.02em;
+  color: #2196F3;
+  border-right: 1px solid rgba(33, 33, 33, 0.2);
+  padding-right: 10px;
+}
+.menu-social__link--last-child{
+  border: transparent;
+}

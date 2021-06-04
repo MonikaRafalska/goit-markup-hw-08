@@ -1171,7 +1171,6 @@ ul {
 }
 
 .project {
-  padding-top: 34px;
   margin: 0 auto;
 }
 
@@ -1182,12 +1181,10 @@ ul {
 }
 
 .projects__item {
-  width: 370px;
   background: var(--main-background-color);
   border: 1px solid #EEEEEE;
   box-sizing: border-box;
-  margin-right: 30px;
-  margin-top: 30px;
+  margin-bottom: 30px;
 }
 
 .projects__item .projects__item:hover {
@@ -1198,17 +1195,10 @@ ul {
   transform: translateY(0);
 }
 
-.projects__item--each-third-child {
-  margin-right: 0px;
-}
-
-.projects__item--first-three-child {
-  margin-top: 0px;
-}
-
 .projects__img {
   display: block;
   padding-bottom: 20px;
+  max-width: 100%;
 }
 
 .projects__text {
@@ -1219,9 +1209,8 @@ ul {
   line-height: 2;
   letter-spacing: 0.06em;
   padding-bottom: 4px;
-  margin-right: 24px;
   margin-left: 24px;
-  width: 322px;
+  max-width: 100%;
 }
 
 .projects__description {
@@ -1232,16 +1221,38 @@ ul {
   letter-spacing: 0.03em;
   color: var(--description-color);
   padding-bottom: 20px;
-  margin-right: 24px;
   margin-left: 24px;
-  width: 322px;
 }
 
 .projects__div {
   position: relative;
   overflow: hidden;
-  width: 370px;
-  margin-bottom: 20px;
+  width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .projects__list {
+    flex-wrap: wrap;
+    justify-content: left;
+  }
+  .projects__item {
+    margin-right: 20px;
+  }
+  .projects__item--each-second-child {
+    margin-right: 0px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .projects__item {
+    margin-right: 30px;
+  }
+  .projects__item--each-third-child {
+    margin-right: 0px;
+  }
+  .projects__item--first-three-child {
+    margin-top: 0px;
+  }
 }
 
 .overlay {
@@ -1258,15 +1269,20 @@ ul {
 .overlay__text {
   font-family: Roboto;
   font-style: normal;
-  width: 301px;
-  height: 196px;
   font-style: normal;
   font-weight: normal;
   font-size: 18px;
   line-height: 1.555;
   letter-spacing: 0.03em;
   color: var(--third-text-color);
-  margin: 49px 45px 49px 24px;
+  padding: 77px 24px 77px 24px;
+  text-align: left;
+}
+
+@media screen and (min-width: 768px) {
+  .overlay__text {
+    padding: 49px 24px 49px 24px;
+  }
 }
 
 .header__container {
@@ -1314,5 +1330,120 @@ ul {
   .burger__btn {
     display: none;
   }
+}
+
+.menu-mobile {
+  box-sizing: border-box;
+  width: 480px;
+  height: 796px;
+  background-color: #fff;
+  position: absolute;
+  padding-top: 48px;
+  padding-left: 40px;
+}
+
+.menu-mobile__close {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 8px;
+  right: 8px;
+  width: 30px;
+  height: 30px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+  background-color: var(--main-background-color);
+  border: none;
+}
+
+.menu-mobile__icon {
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.menu-mobile__list {
+  list-style: none;
+}
+
+.menu-mobile__item {
+  padding-bottom: 32px;
+}
+
+.menu-mobile__link {
+  font-family: Roboto;
+  font-style: 400;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 1.175;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  color: black;
+}
+
+.menu-mobile__link--first-child {
+  color: #2196F3;
+}
+
+.menu-contact__list {
+  list-style: none;
+}
+
+.menu-contact__item {
+  margin-bottom: 32px;
+}
+
+.menu-contact__link {
+  text-decoration: none;
+}
+
+.menu-contact__link--first-child {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 40px;
+  letter-spacing: 0.02em;
+  color: #2196F3;
+}
+
+.menu-contact__link--second-child {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: 0.02em;
+  color: #757575;
+}
+
+.menu-social__list {
+  list-style: none;
+  display: flex;
+  padding-top: 64px;
+}
+
+.menu-social__item {
+  margin-right: 10px;
+}
+
+.menu-social__link {
+  text-decoration: none;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.222;
+  letter-spacing: 0.02em;
+  color: #2196F3;
+  border-right: 1px solid rgba(33, 33, 33, 0.2);
+  padding-right: 10px;
+}
+
+.menu-social__link--last-child {
+  border: transparent;
 }
 /*# sourceMappingURL=main.css.map */

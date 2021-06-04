@@ -28,7 +28,7 @@
                     </li>
                 </ul>
             </nav>
-            <button type="button" class="burger__btn" data-menu-button>
+            <button type="button" class="burger__btn" data-mobile-open>
                 <svg width="24" height="16" class="burger__icon" aria-label="mobile-menu">
                     <use href="./images/burger.svg#icon-menu_burger"></use>
                 </svg>
@@ -82,8 +82,22 @@
                 <ul class="projects__list">
                     <li class="projects__item projects__item--first-three-child">
                         <div class="projects__div">
-                            <img class="projects__img" src="images/project1.jpg"
-                                alt="Laptop wyświetlający stronę Technocrack" width="370" height="291">
+                            <picture>
+                                <source srcset="./images/projects_tablet1.jpg 1x, ./images/projects_tablet1@2x.jpg 2x" media="(min-width:768px)"
+                                    type="image/webp">
+                                <source srcset="./images/projects_tablet1.webp 1x, ./images/projects_tablet1@2x.webp 2x" media="(min-width:768px)"
+                                    type="image/webp">
+                                <source srcset="./images/projects_desktop1.jpg 1x, ./images/projects_desktop1@2x.jpg 2x" media="(min-width:1200px)"
+                                    type="image/webp">
+                                <source srcset="./images/projects_desktop1.webp 1x, ./images/projects_desktop1@2x.webp 2x" media="(min-width:1200px)"
+                                    type="image/webp">
+                                <source srcset="./images/project_mobile1.webp 1x, ./images/project_mobile1@2x.webp 2x" media="(min-width:480px)"
+                                    type="image/webp">
+                                <img class="projects__img" srcset="./images/project_mobile1.jpg 1x, ./images/project_mobile1@2x.jpg 2x"
+                                    src="./images/project_mobile1.jpg" alt="Laptop wyświetlający stronę Technocrack">
+                            </picture>
+                            <!-- <img class="projects__img" src="images/project1.jpg"
+                                alt="Laptop wyświetlający stronę Technocrack" width="370" height="291"> -->
                             <div class="overlay">
                                 <p class="overlay__text">Technocrack jest popularną platformą wykorzystywaną do rozpowszechniania
                                     koronawirusa. Firmy wykorzystują tę platformę
@@ -94,10 +108,24 @@
                         <p class="projects__description">Strona internetowa</p>
                     </li>
         
-                <li class="projects__item projects__item--first-three-child">
+                <li class="projects__item projects__item--first-three-child projects__item--each-second-child">
                     
                     <div class="projects__div">
-                        <img class="projects__img" src="images/project2.jpg" alt="Koszykarz New Orlean i Golden Star" width="370" height="291">
+                        <picture>
+                            <source srcset="./images/projects_tablet2.jpg 1x, ./images/projects_tablet2@2x.jpg 2x" media="(min-width:768px)"
+                                type="image/webp">
+                            <source srcset="./images/projects_tablet2.webp 1x, ./images/projects_tablet2@2x.webp 2x" media="(min-width:768px)"
+                                type="image/webp">
+                            <source srcset="./images/projects_desktop2.jpg 1x, ./images/projects_desktop2@2x.jpg 2x" media="(min-width:1200px)"
+                                type="image/webp">
+                            <source srcset="./images/projects_desktop2.webp 1x, ./images/projects_desktop2@2x.webp 2x"
+                                media="(min-width:1200px)" type="image/webp">
+                            <source srcset="./images/project_mobile2.webp 1x, ./images/project_mobile2@2x.webp 2x" media="(min-width:480px)"
+                                type="image/webp">
+                            <img class="projects__img" srcset="./images/project_mobile2.jpg 1x, ./images/project_mobile2@2x.jpg 2x"
+                                src="./images/project_mobile2.jpg" alt="Koszykarz New Orlean i Golden Star">
+                        </picture>
+                        <!-- <img class="projects__img" src="images/project2.jpg" alt="Koszykarz New Orlean i Golden Star" width="370" height="291"> -->
                         
                         <div class="overlay">
                             <p class="overlay__text">Technocrack jest popularną platformą wykorzystywaną do rozpowszechniania koronawirusa. Firmy wykorzystują tę platformę
@@ -111,7 +139,21 @@
                 <li class="projects__item projects__item--first-three-child projects__item--each-third-child">
                     
                     <div class="projects__div">
-                        <img class="projects__img" src="images/project3.jpg" alt="Logo restauracji Seafood" width="370" height="291">
+                        <picture>
+                            <source srcset="./images/projects_tablet3.jpg 1x, ./images/projects_tablet3@2x.jpg 2x" media="(min-width:768px)"
+                                type="image/webp">
+                            <source srcset="./images/projects_tablet3.webp 1x, ./images/projects_tablet3@2x.webp 2x" media="(min-width:768px)"
+                                type="image/webp">
+                            <source srcset="./images/projects_desktop3.jpg 1x, ./images/projects_desktop3@2x.jpg 2x" media="(min-width:1200px)"
+                                type="image/webp">
+                            <source srcset="./images/projects_desktop3.webp 1x, ./images/projects_desktop3@2x.webp 2x"
+                                media="(min-width:1200px)" type="image/webp">
+                            <source srcset="./images/project_mobile3.webp 1x, ./images/project_mobile3@2x.webp 2x" media="(min-width:480px)"
+                                type="image/webp">
+                            <img class="projects__img" srcset="./images/project_mobile3.jpg 1x, ./images/project_mobile3@2x.jpg 2x"
+                                src="./images/project_mobile3.jpg" alt="Logo restauracji Seafood">
+                        </picture>
+                        <!-- <img class="projects__img" src="images/project3.jpg" alt="Logo restauracji Seafood" width="370" height="291"> -->
                         
                         <div class="overlay">
                             <p class="overlay__text">Technocrack jest popularną platformą wykorzystywaną do rozpowszechniania koronawirusa. Firmy wykorzystują tę platformę
@@ -122,10 +164,24 @@
                         <p class="projects__description">Aplikacja</p>
                     
                 </li>
-                <li class="projects__item">
+                <li class="projects__item projects__item--each-second-child">
                     
                     <div class="projects__div">
-                        <img class="projects__img" src="images/project4.jpg" alt="Słuchawki bezprzewodowe" width="370" height="291">
+                        <picture>
+                            <source srcset="./images/projects_tablet4.jpg 1x, ./images/projects_tablet4@2x.jpg 2x" media="(min-width:768px)"
+                                type="image/webp">
+                            <source srcset="./images/projects_tablet4.webp 1x, ./images/projects_tablet4@2x.webp 2x" media="(min-width:768px)"
+                                type="image/webp">
+                            <source srcset="./images/projects_desktop4.jpg 1x, ./images/projects_desktop4@2x.jpg 2x" media="(min-width:1200px)"
+                                type="image/webp">
+                            <source srcset="./images/projects_desktop4.webp 1x, ./images/projects_desktop4@2x.webp 2x"
+                                media="(min-width:1200px)" type="image/webp">
+                            <source srcset="./images/project_mobile4.webp 1x, ./images/project_mobile4@2x.webp 2x" media="(min-width:480px)"
+                                type="image/webp">
+                            <img class="projects__img" srcset="./images/project_mobile4.jpg 1x, ./images/project_mobile4@2x.jpg 2x"
+                                src="./images/project_mobile4.jpg" alt="Słuchawki bezprzewodowe">
+                        </picture>
+                        <!-- <img class="projects__img" src="images/project4.jpg" alt="Słuchawki bezprzewodowe" width="370" height="291"> -->
                         
                         <div class="overlay">
                             <p class="overlay__text">Technocrack jest popularną platformą wykorzystywaną do rozpowszechniania koronawirusa. Firmy wykorzystują tę platformę
@@ -139,7 +195,21 @@
                 <li class="projects__item">
                     
                     <div class="projects__div">
-                        <img class="projects__img" src="images/project5.jpg" alt="Dwa pudełka" width="370" height="291">
+                        <picture>
+                            <source srcset="./images/projects_tablet5.jpg 1x, ./images/projects_tablet5@2x.jpg 2x" media="(min-width:768px)"
+                                type="image/webp">
+                            <source srcset="./images/projects_tablet5.webp 1x, ./images/projects_tablet5@2x.webp 2x" media="(min-width:768px)"
+                                type="image/webp">
+                            <source srcset="./images/projects_desktop5.jpg 1x, ./images/projects_desktop5@2x.jpg 2x" media="(min-width:1200px)"
+                                type="image/webp">
+                            <source srcset="./images/projects_desktop5.webp 1x, ./images/projects_desktop5@2x.webp 2x"
+                                media="(min-width:1200px)" type="image/webp">
+                            <source srcset="./images/project_mobile5.webp 1x, ./images/project_mobile5@2x.webp 2x" media="(min-width:480px)"
+                                type="image/webp">
+                            <img class="projects__img" srcset="./images/project_mobile5.jpg 1x, ./images/project_mobile5@2x.jpg 2x"
+                                src="./images/project_mobile5.jpg" alt="Dwa pudełka">
+                        </picture>
+                        <!-- <img class="projects__img" src="images/project5.jpg" alt="Dwa pudełka" width="370" height="291"> -->
                         
                         <div class="overlay">
                             <p class="overlay__text">Technocrack jest popularną platformą wykorzystywaną do rozpowszechniania koronawirusa. Firmy wykorzystują tę platformę
@@ -150,10 +220,24 @@
                         <p class="projects__description">Aplikacja</p>
                     
                 </li>
-                <li class="projects__item projects__item--each-third-child">
+                <li class="projects__item projects__item--each-third-child projects__item--each-second-child">
                     
                     <div class="projects__div">
-                        <img class="projects__img" src="images/project6.jpg" alt="Monitor wyświetlający stronę Inspiration has no Borders" width="370" height="291">
+                        <picture>
+                            <source srcset="./images/projects_tablet6.jpg 1x, ./images/projects_tablet6@2x.jpg 2x" media="(min-width:768px)"
+                                type="image/webp">
+                            <source srcset="./images/projects_tablet6.webp 1x, ./images/projects_tablet6@2x.webp 2x" media="(min-width:768px)"
+                                type="image/webp">
+                            <source srcset="./images/projects_desktop6.jpg 1x, ./images/projects_desktop6@2x.jpg 2x" media="(min-width:1200px)"
+                                type="image/webp">
+                            <source srcset="./images/projects_desktop6.webp 1x, ./images/projects_desktop6@2x.webp 2x"
+                                media="(min-width:1200px)" type="image/webp">
+                            <source srcset="./images/project_mobile6.webp 1x, ./images/project_mobile6@2x.webp 2x" media="(min-width:480px)"
+                                type="image/webp">
+                            <img class="projects__img" srcset="./images/project_mobile6.jpg 1x, ./images/project_mobile6@2x.jpg 2x"
+                                src="./images/project_mobile6.jpg" alt="Monitor wyświetlający stronę Inspiration has no Borders">
+                        </picture>
+                        <!-- <img class="projects__img" src="images/project6.jpg" alt="Monitor wyświetlający stronę Inspiration has no Borders" width="370" height="291"> -->
                         
                         <div class="overlay">
                             <p class="overlay__text">Technocrack jest popularną platformą wykorzystywaną do rozpowszechniania koronawirusa. Firmy wykorzystują tę platformę
@@ -167,7 +251,21 @@
                 <li class="projects__item">
                     
                     <div class="projects__div">
-                        <img class="projects__img" src="images/project7.jpg" alt="Strona z magazynu Limited Edition" width="370" height="291">
+                        <picture>
+                            <source srcset="./images/projects_tablet7.jpg 1x, ./images/projects_tablet7@2x.jpg 2x" media="(min-width:768px)"
+                                type="image/webp">
+                            <source srcset="./images/projects_tablet7.webp 1x, ./images/projects_tablet7@2x.webp 2x" media="(min-width:768px)"
+                                type="image/webp">
+                            <source srcset="./images/projects_desktop7.jpg 1x, ./images/projects_desktop7@2x.jpg 2x" media="(min-width:1200px)"
+                                type="image/webp">
+                            <source srcset="./images/projects_desktop7.webp 1x, ./images/projects_desktop7@2x.webp 2x"
+                                media="(min-width:1200px)" type="image/webp">
+                            <source srcset="./images/project_mobile7.webp 1x, ./images/project_mobile7@2x.webp 2x" media="(min-width:480px)"
+                                type="image/webp">
+                            <img class="projects__img" srcset="./images/project_mobile7.jpg 1x, ./images/project_mobile7@2x.jpg 2x"
+                                src="./images/project_mobile7.jpg" alt="Strona z magazynu Limited Edition">
+                        </picture>
+                        <!-- <img class="projects__img" src="images/project7.jpg" alt="Strona z magazynu Limited Edition" width="370" height="291"> -->
                         
                         <div class="overlay">
                             <p class="overlay__text">Technocrack jest popularną platformą wykorzystywaną do rozpowszechniania koronawirusa. Firmy wykorzystują tę platformę
@@ -178,10 +276,24 @@
                         <p class="projects__description">Dizajn</p>
                     
                 </li>
-                <li class="projects__item">
+                <li class="projects__item projects__item--each-second-child">
                     
                     <div class="projects__div">
-                        <img class="projects__img" src="images/project8.jpg" alt="Logo Projekt LAB" width="370" height="291">
+                        <picture>
+                            <source srcset="./images/projects_tablet8.jpg 1x, ./images/projects_tablet8@2x.jpg 2x" media="(min-width:768px)"
+                                type="image/webp">
+                            <source srcset="./images/projects_tablet8.webp 1x, ./images/projects_tablet8@2x.webp 2x" media="(min-width:768px)"
+                                type="image/webp">
+                            <source srcset="./images/projects_desktop8.jpg 1x, ./images/projects_desktop8@2x.jpg 2x" media="(min-width:1200px)"
+                                type="image/webp">
+                            <source srcset="./images/projects_desktop8.webp 1x, ./images/projects_desktop8@2x.webp 2x"
+                                media="(min-width:1200px)" type="image/webp">
+                            <source srcset="./images/project_mobile8.webp 1x, ./images/project_mobile8@2x.webp 2x" media="(min-width:480px)"
+                                type="image/webp">
+                            <img class="projects__img" srcset="./images/project_mobile8.jpg 1x, ./images/project_mobile8@2x.jpg 2x"
+                                src="./images/project_mobile8.jpg" alt="Logo Projekt LAB">
+                        </picture>
+                        <!-- <img class="projects__img" src="images/project8.jpg" alt="Logo Projekt LAB" width="370" height="291"> -->
                         
                         <div class="overlay">
                             <p class="overlay__text">Technocrack jest popularną platformą wykorzystywaną do rozpowszechniania koronawirusa. Firmy wykorzystują tę platformę
@@ -195,7 +307,21 @@
                 <li class="projects__item projects__item--each-third-child">
                     
                     <div class="projects__div">
-                        <img class="projects__img" src="images/project9.jpg" alt="Laptop wyświetlający stronę Growing Business" width="370" height="291">
+                        <picture>
+                            <source srcset="./images/projects_tablet9.jpg 1x, ./images/projects_tablet9@2x.jpg 2x" media="(min-width:768px)"
+                                type="image/webp">
+                            <source srcset="./images/projects_tablet9.webp 1x, ./images/projects_tablet8@2x.webp 2x" media="(min-width:768px)"
+                                type="image/webp">
+                            <source srcset="./images/projects_desktop9.jpg 1x, ./images/projects_desktop9@2x.jpg 2x" media="(min-width:1200px)"
+                                type="image/webp">
+                            <source srcset="./images/projects_desktop9.webp 1x, ./images/projects_desktop9@2x.webp 2x"
+                                media="(min-width:1200px)" type="image/webp">
+                            <source srcset="./images/project_mobile9.webp 1x, ./images/project_mobile9@2x.webp 2x" media="(min-width:480px)"
+                                type="image/webp">
+                            <img class="projects__img" srcset="./images/project_mobile9.jpg 1x, ./images/project_mobile9@2x.jpg 2x"
+                                src="./images/project_mobile9.jpg" alt="Laptop wyświetlający stronę Growing Business">
+                        </picture>
+                        <!-- <img class="projects__img" src="images/project9.jpg" alt="Laptop wyświetlający stronę Growing Business" width="370" height="291"> -->
                         
                         <div class="overlay">
                             <p class="overlay__text">Technocrack jest popularną platformą wykorzystywaną do rozpowszechniania koronawirusa. Firmy wykorzystują tę platformę
@@ -274,6 +400,53 @@
         </form>
         </div>
     </footer>
+    <!-- MOBILE OKNO MODALNE -->
+    
+    <div class="backdrop is-hidden" mobile-menu>
+        <div class="menu-mobile">
+            <button type="button" class="menu-mobile__close" data-mobile-close>
+                <svg class="menu-mobile__icon">
+                    <use href="./images/button-close.svg#icon-Vector"></use>
+                </svg>
+            </button>
+            <ul class="menu-mobile__list">
+                <li class="menu-mobile__item">
+                    <a href="#" class="menu-mobile__link menu-mobile__link--first-child">Agencja</a>
+                </li>
+                <li class="menu-mobile__item">
+                    <a href="portfolio.html" class="menu-mobile__link">Portfolio</a>
+                </li>
+                <li class="menu-mobile__item">
+                    <a href="#" class="menu-mobile__link">Kontakt</a>
+                </li>
+            </ul>
+            <ul class="menu-contact__list">
+                <li class="menu-contact__item">
+                    <a href="tel:+48111111111" class="menu-contact__link menu-contact__link--first-child">+48 111 111
+                        111</a>
+                </li>
+                <li class="menu-contact__item">
+                    <a href="mailto:info@devstudio.com"
+                        class="menu-contact__link menu-contact__link--second-child">info@devstudio.com</a>
+                </li>
+            </ul>
+            <ul class="menu-social__list">
+                <li class="menu-social__item">
+                    <a href="#" class="menu-social__link">Instagram</a>
+                </li>
+                <li class="menu-social__item">
+                    <a href="#" class="menu-social__link">Twitter</a>
+                </li>
+                <li class="menu-social__item">
+                    <a href="#" class="menu-social__link">Facebook</a>
+                </li>
+                <li class="menu-social__item">
+                    <a href="#" class="menu-social__link menu-social__link--last-child">LinkedIn</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <script src="./js/mobile-menu.js"></script>
     
 </body>
 </html>
